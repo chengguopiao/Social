@@ -16,9 +16,9 @@ class MyTest(unittest.TestCase):
 
 
     def testCaptureWithBackAndFrontCamera(self):
-	#find 'Camera' app in main screen and launch it.
-	d.press.back()
+	# set camera status to back
 	self._confirmcamerastatus('back')
+	
 
 
     def _launchcamera(self):

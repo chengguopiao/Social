@@ -1,0 +1,15 @@
+lang: python
+
+python: 2.7
+
+install:
+  - 
+
+before_script:
+  - echo "Before script..."
+
+script:
+  - python test.py
+
+after_script:
+  - echo "after_script"
