@@ -3,13 +3,7 @@ lang: python
 python: 2.7
 
 install:
-  - 
-
-before_script:
-  - echo "Before script..."
+  - pip install -r requirements.txt
 
 script:
-  - python test.py
-
-after_script:
-  - echo "after_script"
+  - python run.py
