@@ -1,40 +1,4 @@
 [tests]
-scripts.testcases.singlecamera.SingleCamera.testcapturewithsenceauto = 1
-scripts.testcases.singlecamera.SingleCamera.testcapturewithsencesports = 1
-scripts.testcases.singlecamera.SingleCamera.testcapturewithsencenight = 1
-scripts.testcases.singlecamera.SingleCamera.testcapturewithsencelandscape = 1
-scripts.testcases.singlecamera.SingleCamera.testcapturewithsenceportrait = 1
-scripts.testcases.singlecamera.SingleCamera.testcapturewithsencenightportrait = 1
-scripts.testcases.singlecamera.SingleCamera.testcapturewithsencebarcode = 1
-scripts.testcases.singlecamera.SingleCamera.testcapturewithsencefireworks = 1
-scripts.testcases.singlecamera.SingleCamera.testcapturewithflashon = 1
-scripts.testcases.singlecamera.SingleCamera.testcapturewithflashoff = 1
-scripts.testcases.singlecamera.SingleCamera.testcapturewithflashauto = 1
-scripts.testcases.singlecamera.SingleCamera.testcapturewithfdfron = 1
-scripts.testcases.singlecamera.SingleCamera.testcapturewithfdfroff = 1
-scripts.testcases.singlecamera.SingleCamera.testcapturewithhintsoff = 1
-scripts.testcases.singlecamera.SingleCamera.testcapturewithhintson = 1
-
-scripts.testcases.singlecamera.SingleCamera.testcapturewithlocationon = 1
-scripts.testcases.singlecamera.SingleCamera.testcapturewithlocationoff = 1
-scripts.testcases.singlecamera.SingleCamera.testcapturewithpicturesizewide = 1
-scripts.testcases.singlecamera.SingleCamera.testcapturewithpicturesizestandard = 1
-scripts.testcases.singlecamera.SingleCamera.testcapturewithexpoureauto = 1
-scripts.testcases.singlecamera.SingleCamera.testcapturewithexpoure1 = 1
-scripts.testcases.singlecamera.SingleCamera.testcapturewithexpoure2 = 1
-scripts.testcases.singlecamera.SingleCamera.testcapturewithexpoureend1 = 1
-scripts.testcases.singlecamera.SingleCamera.testcapturewithexpoureend2 = 1
-scripts.testcases.singlecamera.SingleCamera.testcapturewithwbauto = 1
-scripts.testcases.singlecamera.SingleCamera.testcapturewithwbincandescent = 1
-scripts.testcases.singlecamera.SingleCamera.testcapturewithwbdaylight = 1
-scripts.testcases.singlecamera.SingleCamera.testcapturewithwbfluorescent = 1
-scripts.testcases.singlecamera.SingleCamera.testcapturewithwbcloudydaylight = 1
-scripts.testcases.singlecamera.SingleCamera.testcapturewithiso100 = 1
-scripts.testcases.singlecamera.SingleCamera.testcapturewithiso200 = 1
-scripts.testcases.singlecamera.SingleCamera.testcapturewithiso400 = 1
-scripts.testcases.singlecamera.SingleCamera.testcapturewithiso800 = 1
-scripts.testcases.singlecamera.SingleCamera.testcapturewithselftimer10 = 1
-scripts.testcases.singlecamera.SingleCamera.testcapturewithselftimer5 = 1
-scripts.testcases.singlecamera.SingleCamera.testcapturewithselftimer3 = 1
-scripts.testcases.singlecamera.SingleCamera.testcapturewithselftimer0 = 1
-
+scripts.testcases.Social_BAT.MyTest.testCaptureWithBackAndFrontCamera = 1
+scripts.testcases.Social_BAT.MyTest.testCaptureWith6MPPortraitFlashOn = 1
+scripts.testcases.Social_BAT.MyTest.testCaptureWithFrontCamera = 1
