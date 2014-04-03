@@ -63,7 +63,7 @@ class MyTest(unittest.TestCase):
         Summary:This method is use to test social_util
         """
         d.start_activity(component = ACTIVITY_NAME)
-        self._setSingleCameraSetting('hits','on')
+        self._setSingleCameraSetting('flash','on')
         print 'test over'
 
     # Test case 2
@@ -72,7 +72,7 @@ class MyTest(unittest.TestCase):
         Summary:This method is use to test social_util
         """
         d.start_activity(component = ACTIVITY_NAME)
-        self._setSingleCameraSetting('hits','off')
+        self._setSingleCameraSetting('flash','off')
         print 'test over'
 
     # Test case 3
@@ -81,7 +81,7 @@ class MyTest(unittest.TestCase):
         Summary:This method is use to test social_util
         """
         d.start_activity(component = ACTIVITY_NAME)
-        self._setSingleCameraSetting('expourse','-1')
+        self._setSingleCameraSetting('delay','5')
         print 'test over'
 
     # Test case 4
@@ -90,7 +90,7 @@ class MyTest(unittest.TestCase):
         Summary:This method is use to test social_util
         """
         d.start_activity(component = ACTIVITY_NAME)
-        self._setSingleCameraSetting('delay','5')
+        self._setSingleCameraSetting('whitebalance','fluorescent')
         print 'test over'
 
     def _setCameraMode(self,mode):
