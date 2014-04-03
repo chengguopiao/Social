@@ -1,4 +1,5 @@
 [tests]
-scripts.testcases.Social_BAT.MyTest.testCaptureWithBackAndFrontCamera = 1
-scripts.testcases.Social_BAT.MyTest.testCaptureWith6MPPortraitFlashOn = 1
-scripts.testcases.Social_BAT.MyTest.testCaptureWithFrontCamera = 1
+scripts.testcases.test.MyTest.testSetSingleCameraA = 10
+scripts.testcases.test.MyTest.testSetSingleCameraB = 10
+scripts.testcases.test.MyTest.testSetSingleCameraC = 10
+scripts.testcases.test.MyTest.testSetSingleCameraD = 10
