@@ -67,7 +67,7 @@ class MyTest(unittest.TestCase):
         print 'test over'
 
     # Test case 2
-    def testSetSingleCameraA(self):
+    def testSetSingleCameraB(self):
         """
         Summary:This method is use to test social_util
         """
@@ -76,7 +76,7 @@ class MyTest(unittest.TestCase):
         print 'test over'
 
     # Test case 3
-    def testSetSingleCameraA(self):
+    def testSetSingleCameraC(self):
         """
         Summary:This method is use to test social_util
         """
@@ -85,7 +85,7 @@ class MyTest(unittest.TestCase):
         print 'test over'
 
     # Test case 4
-    def testSetSingleCameraA(self):
+    def testSetSingleCameraD(self):
         """
         Summary:This method is use to test social_util
         """
