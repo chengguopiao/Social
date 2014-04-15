@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 from devicewrapper.android import device as d
-import util_social_new
+import Util_remix
 import time
 from adb import Adb
 import unittest
@@ -10,7 +10,8 @@ import commands
 MODE      = ('single','smile','hdr','video','burst','perfectshot','panorama')
 SUB_MODE  = range(1,9)
 OPTION    = range(1,2)
-
+BACKFRONT = ('back','front')
+CAPTUREMODE = ('single','smile','longclick')
 
 class MyTest(unittest.TestCase):
 
@@ -31,8 +32,12 @@ class MyTest(unittest.TestCase):
             mode     = random.choice(MODE)
             sub_mode = random.choice(SUB_MODE)
             option = random.choice(OPTION)
+            backfront = random.choice(BACKFRONT)
+            capturemode = random.choice(CAPTUREMODE)
+            TouchButton().switchBackOrFrontCamera(backfront)            
             util_social_new.switchcamera(mode)
-            util_social_new.setCameraSetting('mode',sub_mode,option)
+            util_social_new.setCameraSetting(mode,sub_mode,option)
+            TouchButton().takePicture()
             print mode,sub_mode,option
             result1 = commands.getoutput('adb shell cat /data/data/com.intel.camera22/shared_prefs/com.intel.camera22_preferences_0.xml ')
             result2 = commands.getoutput('adb shell cat /data/data/com.intel.camera22/shared_prefs/com.intel.camera22_preferences_0_0.xml ')
