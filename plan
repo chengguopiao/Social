@@ -1,5 +1,3 @@
 [tests]
-scripts.testcases.test.MyTest.testSetSingleCameraA = 10
-scripts.testcases.test.MyTest.testSetSingleCameraB = 10
-scripts.testcases.test.MyTest.testSetSingleCameraC = 10
-scripts.testcases.test.MyTest.testSetSingleCameraD = 10
+# this method is test API
+scripts.testcases.singlecamera.MyTest.testSetCamera = 10
