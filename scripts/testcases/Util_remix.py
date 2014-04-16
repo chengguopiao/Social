@@ -211,6 +211,12 @@ class SetMode():
         d(resourceId = 'com.intel.camera22:id/left_menus_flash_setting').click.wait()
         d(resourceId = 'com.intel.camera22:id/hori_list_button')[FLASH_SETTING.index(option)].click.wait()
 
+    def _setFDFRMode(self,option):
+        FDFRStatus = commands.getoutput('adb shell cat /data/data/com.intel.camera22/shared_prefs/com.intel.camera22_preferences_0.xml | grep pref_fdfr_key')
+        if FDFRStatus.find(option) == -1:
+            d(resourceId = 'com.intel.camera22:id/left_menus_face_tracking').click()
+        else:
+            print 'current status is fdfr ' + option
 
     def setCameraSetting(self,mode,sub_mode,option):
         '''
@@ -232,6 +238,8 @@ class SetMode():
             return False
         if sub_mode== 'flash':
             _setFlashMode(option)
+        elif sub_mode == 'fdfr':
+            _setFDFRMode(option)
         else:
             d(resourceId = 'com.intel.camera22:id/left_menus_camera_setting').click.wait(timeout=2000)
             if sub_mode <= 7:
