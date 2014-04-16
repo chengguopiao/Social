@@ -234,12 +234,10 @@ class SetMode():
         '''
     
         settings = MODE[mode]
-        if sub_mode > 8:
-            return False
         if sub_mode== 'flash':
-            _setFlashMode(option)
+            self._setFlashMode(option)
         elif sub_mode == 'fdfr':
-            _setFDFRMode(option)
+            self._setFDFRMode(option)
         else:
             d(resourceId = 'com.intel.camera22:id/left_menus_camera_setting').click.wait(timeout=2000)
             if sub_mode <= 7:
@@ -252,7 +250,7 @@ class SetMode():
                 d.swipe(680,180,100,180)
                 d(resourceId = HORI_LIST_BUTTON)[sub_mode-2-1].click.wait()
                 d(resourceId = HORI_LIST_BUTTON)[option+7-1].click.wait()
-            return True
+
 
 class TouchButton():
 
